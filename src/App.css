@@ -1,0 +1,10 @@
+.main-content {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+      height: 100vh;
+    }
+
+    .content {
+      margin-top: 20px;
+    }

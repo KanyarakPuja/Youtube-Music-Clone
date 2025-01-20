@@ -1,0 +1,144 @@
+.sidebar {
+      width: 250px;
+      background-color: #1e1e1e;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      transition: width 0.3s ease;
+      
+    }
+
+    .sidebar.closed {
+      width: 150px;
+      background-color: transparent;
+    }
+
+    .sidebar.closed .sidebar-menu li span.menu-text {
+      display: block;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 5px;
+      margin-left: 0;
+      white-space: nowrap;
+    }
+
+    .sidebar.closed .sidebar-playlist .new-playlist {
+      display: none;
+    }
+
+    .sidebar.closed .sidebar-playlist .playlist-items {
+      display: none;
+    }
+
+    .sidebar.closed .sidebar-menu li {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 10px;
+      border-radius: 10px;
+    }
+
+    .sidebar-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px 0;
+    }
+
+    .hamburger-menu {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .music-icon {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .music-text {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    .sidebar-menu li {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      cursor: pointer;
+      margin: 5px 0;
+    }
+
+    .sidebar-menu li:hover {
+      background-color: #333;
+    }
+
+    .sidebar-menu li span {
+      margin-left: 10px;
+    }
+
+    .sidebar-playlist {
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #333;
+    }
+
+    .sidebar.closed .sidebar-playlist {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .new-playlist {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      cursor: pointer;
+      margin: 5px 0;
+      border-radius: 20px;
+    }
+
+    .new-playlist:hover {
+      background-color: #333;
+    }
+
+    .new-playlist span {
+      margin-left: 10px;
+    }
+
+    .playlist-items {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .playlist-item {
+      margin-bottom: 10px;
+      padding: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .playlist-item:hover {
+      background-color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .playlist-title {
+      font-weight: bold;
+      margin: 0;
+      padding-left: 10px;
+    }
+
+    .playlist-creator {
+      font-weight: normal;
+      color: #aaa;
+      margin: 0;
+      padding-left: 10px;
+    }
